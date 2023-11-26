@@ -6,18 +6,22 @@ import numpy as np
 import cvzone
 import argparse
 
-# loading the model
-
-model = YOLO('best.pt')
-
 # Arg parser
 parser = argparse.ArgumentParser(description='Setup')
 parser.add_argument('--image', default='Images', type=str, help='Path of the image')
+parser.add_argument('--weight', default='Weights', type=str, help='weights for the model')
 args =  parser.parse_args()
 
 # Setup
 
 image_path = args.image
+weights_path = args.weight
+
+
+# loading the model
+
+model = YOLO(weights_path)
+
 
 # loading image for inference
 

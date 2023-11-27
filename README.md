@@ -6,7 +6,7 @@ Git clone this repo
 git clone https://github.com/Mohankrish08/Face-crop.git
 ```
 
-For Inference this model
+Inference this model
 
 ```bash
 python Sample.py --weight <weights> --image <inference image>

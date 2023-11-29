@@ -1,1 +1,1 @@
-python Sample.py --image Group2.jpg
+python main.py --folder <input folder> --weight <weights> --output_folder <name of the output folder>

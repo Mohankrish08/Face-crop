@@ -27,7 +27,7 @@ pip install -r requirements.txt
 2. Execute the tool, specifying the input folder path.
 3. Obtain cropped facial images in the output folder.
 
-Inference this model
+## Inference 
 
 ```bash
 python main.py --folder <input folder> --weight <weights> --output_folder <name of the output folder>

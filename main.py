@@ -31,9 +31,11 @@ new_folder = output
 if not os.path.exists(new_folder):
     os.makedirs(new_folder)
 for dir in os.listdir(folder_path):
-    alter_path = os.path.join(folder_path + dir)
+    alter_path = os.path.join(folder_path, dir)
+    #print(alter_path)
     img_name, ext = os.path.splitext(dir)
-    image = cv2.imread(os.path.join(folder_path + dir))
+    image = cv2.imread(os.path.join(folder_path,  dir))
+    #print(image)
     results = model(image)
     for r in results:
         boxes, labels = r.boxes, r.names
